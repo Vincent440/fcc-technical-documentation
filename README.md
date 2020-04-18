@@ -1,15 +1,22 @@
-# fcc-technical-documentation
+# fcc-MD-technical-documentation
 
-freeCodeCamp Techincal Documentation Page Created by Vincent Shury
+freeCodeCamp Technical Documentation Page Created by Vincent Shury
 
-A techincal documentation site.
+A technical documentation site.
+My idea for completing this project was to find an existing set of documentation to restyle in my own unique format.
+As well as to give me the ability to add to my own docs if I needed to.
+
+**Markdown** was the documentation that I decided would be best to make a responsive web design project.
+
+[Mastering Markdown](https://guides.github.com/features/mastering-markdown/) located on [GitHub Guides](https://guides.github.com/) was my primary resource for the initial docs.
+
 Utilizing HTML, CSS, and Bootstrap v4.4 to create a mobile responsive page layout.
 
 <!--Main Screenshot or image of project -->
 
 ## Getting Started
 
-You can view the [Techincal Documentation](http://www.vshury.com/fcc-technical-documentation/) page directly from my GitHub Pages deployment
+You can view the [Technical Documentation](http://www.vshury.com/fcc-technical-documentation/) page directly from my GitHub Pages deployment
 
 ### **Required Installs**
 
@@ -59,6 +66,4 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## Acknowledgments & Resources
 
-* [freeCodeCamp](https://www.freecodecamp.org/) - Challenges and Project Direction.
-
-* [Bootstrap](https://getbootstrap.com/) v4.4 - A great tool for easily getting a project started and saving time.
+* [freeCodeCamp](https://www.freecodecamp.org/) - Challenges, community, User stories and Project Direction to build off of.
