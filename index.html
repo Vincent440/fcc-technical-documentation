@@ -9,10 +9,9 @@
     <!-- freeCodeCamp Test Suites -->
     <script async src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
   </head>
-  <body class="bg-dark vh-100">
+  <body>
     <!-- CONTENT RESOURCE -->
     <!-- https://guides.github.com/features/mastering-markdown/ -->
-
     <main id="main-doc" class="container-fluid">
       <div class="row">
         <div class="col-3 bg-light border rounded-lg text-center">
@@ -29,7 +28,7 @@
           </nav>
         </div>
 
-        <div class="col-9 card rounded-lg">
+        <div id="content" class="col-9 pl-3 rounded-lg">
 
           <section class="main-section card" id="Introduction">
               <header class="card-header">
@@ -65,7 +64,7 @@
               </div>
           </section>
 
-          <section class="main-section card" id="What_Is_Markdown?">
+          <section class="main-section card my-2" id="What_Is_Markdown?">
               <header class="card-header">
                 <h2>What is Markdown?</h2>
               </header>
@@ -75,34 +74,46 @@
                   creating lists are just a few of the things we can do with Markdown. Mostly, Markdown is just regular text with a few non-alphabetic characters thrown in, like
                   <code class="">#</code> or <code class="">*</code>.
                 </p>
+                <p>You can use Markdown most places around GitHub:</p>
+
+                <ol>
+                  <li><a href="https://gist.github.com/">Gists</a></li>
+                  <li>Comments in Issues and Pull Requests</li>
+                  <li>Files with the <code>.md</code> or <code>.markdown</code> extension</li>
+                </ol>
+                <p>For more information, see <a href="https://help.github.com/categories/writing-on-github/">“Writing on GitHub”</a> on GitHub in the help sub domain.</p>
+
               </div>
           </section>
 
-          <section class="main-section card" id="Examples">
+          <section class="main-section card my-2" id="Examples">
             
               <header class="card-header">
                 <h2>Examples</h2>
               </header>
               <div class="card-body">
-
+               <pre class="source-code">
+                 It's very easy to make some words **bold** and other words *italic* with Markdown. You can even 
+                 <span style="white-space:nowrap">[link to Google!](http://google.com)</span>
+                </pre>
               </div>
             
           </section>
 
-          <section class="main-section card" id="Syntax_guide">
+          <section class="main-section card my-2" id="Syntax_guide">
             
               <header class="card-header">
                 <h2>Syntax guide</h2>
               </header>
           </section>
 
-          <section class="main-section card" id="GitHub_Flavored_Markdown">
+          <section class="main-section card my-2" id="GitHub_Flavored_Markdown">
             <header class="card-header">
              <h2>GitHub Flavored Markdown</h2>
             </header>
           </section>
 
-          <section class="main-section card" id="Markdown_Resources">
+          <section class="main-section card my-2" id="Markdown_Resources">
             <header class="card-header">
               <h2>Markdown Resources</h2>
             </header>

@@ -1,0 +1,23 @@
+body {
+    background-color: gray;
+}
+.source-code {
+    padding: 20px;
+    margin: 0;
+    font-size: 16px;
+    line-height: 28px;
+    white-space: pre-wrap;
+    background: #F8F8F8;
+    border: none;
+        border-bottom-color: currentcolor;
+        border-bottom-style: none;
+        border-bottom-width: medium;
+    border-bottom: 1px solid #ccc;
+    border-radius: 0;
+    overflow: auto;
+}
+#content {
+    overflow-y: scroll;
+    max-height: 100vh;
+    border: 1px solid white;
+}
