@@ -2,194 +2,307 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
     <title>Markdown Docs</title>
-    <!-- <link rel="stylesheet" href="./styles.css" /> -->
-    <!-- freeCodeCamp Test Suites -->
-    <script async src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
   </head>
   <body>
     <!-- CONTENT RESOURCE -->
     <!-- https://guides.github.com/features/mastering-markdown/ -->
-    <main id="main-doc">
 
-          <nav id="navbar">
-            <header>
-              <h2>
-                MD Documentation
-              </h2>
-            </header>
-            <a href="#Introduction">Introduction</a>
-            <a href="#What_Is_Markdown?">What is Markdown?</a>
-            <a href="#Examples">Examples</a>
-            <a href="#Syntax_guide">Syntax guide</a>
-            <a href="#GitHub_Flavored_Markdown">GitHub Flavored Markdown</a>
-            <a href="#Markdown_Resources">Markdown Resources</a>
-          </nav>
-          <section id="Introduction" class="main-section">
-              <header>
-                <h2>
-                  Introduction
-                </h2>
-              </header>
-      
-              <p>
-                Markdown is a lightweight and easy-to-use syntax for styling all forms of writing on the GitHub platform.
-              </p>
-              <strong>
-                What you will learn:
-              </strong>
-              <ul>
-                <li>
-                  How the Markdown format makes styled collaborative editing easy
-                </li>
-  
-                <li>
-                  How Markdown differs from traditional formatting approaches
-                </li>
-  
-                <li>
-                  How to use Markdown to format text
-                </li>
-  
-                <li>
-                  How to leverage GitHub’s automatic Markdown rendering
-                </li>
-  
-                <li>
-                  How to apply GitHub’s unique Markdown extensions
-                </li>
-              </ul>
+    <style>
+      body {
+        background: darkgray;
+      }
+      .container {
+        min-height: 300px;
+
+        max-width: 90vw;
+        font-size: 1.5em;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 250px auto;
+        grid-gap: 20px;
+        grid-template-areas:
+          'navbar'
+          'content';
+      }
+      pre {
+        background-color: #f8f8f8;
+        border: 1px solid #ddd;
+        font-size: 13px;
+        line-height: 19px;
+        overflow: auto;
+        padding: 6px 10px;
+        border-radius: 3px;
+      }
+      #navbar {
+        grid-area: navbar;
+      }
+      #main-doc {
+        grid-area: content;
+      }
+
+      @media (min-width: 600px) {
+        body {
+          overflow: hidden;
+        }
+        .container {
+          height: 100vh;
+          width: 100vw;
+          grid-template-columns: auto 1fr;
+          grid-template-rows: 100px 1fr;
+          grid-template-areas:
+            'navbar content'
+            'navbar content';
+        }
+        #main-doc {
+          overflow-y: scroll;
+        }
+      }
+    </style>
+    <div class="container">
+      <nav id="navbar">
+        <header>
+          <h1>
+            MD Documentation
+          </h1>
+        </header>
+        <ul>
+          <li>
+            <a class="nav-link" href="#Introduction">Introduction</a>
+          </li>
+          <li>
+            <a class="nav-link" href="#What_Is_Markdown?">What is Markdown?</a>
+          </li>
+          <li>
+            <a class="nav-link" href="#Examples">Examples</a>
+          </li>
+          <li>
+            <a class="nav-link" href="#Syntax_guide">Syntax guide</a>
+          </li>
+          <li>
+            <a class="nav-link" href="#GitHub_Flavored_Markdown"
+              >GitHub Flavored Markdown</a
+            >
+          </li>
+          <li>
+            <a class="nav-link" href="#Markdown_Resources"
+              >Markdown Resources</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <main id="main-doc">
+        <section id="Introduction" class="main-section">
+          <header>
+            <h2>
+              Introduction
+            </h2>
+          </header>
+
+          <p>
+            Markdown is a lightweight and easy-to-use syntax for styling all
+            forms of writing on the GitHub platform.
+          </p>
+          <strong>
+            What you will learn:
+          </strong>
+          <ul>
+            <li>
+              How the Markdown format makes styled collaborative editing easy
+            </li>
+
+            <li>
+              How Markdown differs from traditional formatting approaches
+            </li>
+
+            <li>
+              How to use Markdown to format text
+            </li>
+
+            <li>
+              How to leverage GitHub’s automatic Markdown rendering
+            </li>
+
+            <li>
+              How to apply GitHub’s unique Markdown extensions
+            </li>
+          </ul>
+        </section>
+
+        <section id="What_Is_Markdown?" class="main-section">
+          <header>
+            <h2>What is Markdown?</h2>
+          </header>
+
+          <p>
+            <a href="http://daringfireball.net/projects/markdown/">Markdown</a>
+            is a way to style text on the web. You control the display of the
+            document; formatting words as bold or italic, adding images, and
+            creating lists are just a few of the things we can do with Markdown.
+            Mostly, Markdown is just regular text with a few non-alphabetic
+            characters thrown in, like <code class="">#</code> or
+            <code class="">*</code>.
+          </p>
+          <p>You can use Markdown most places around GitHub:</p>
+
+          <ol>
+            <li><a href="https://gist.github.com/">Gists</a></li>
+            <li>Comments in Issues and Pull Requests</li>
+            <li>
+              Files with the <code>.md</code> or
+              <code>.markdown</code> extension
+            </li>
+          </ol>
+          <p>
+            For more information, see
+            <a href="https://help.github.com/categories/writing-on-github/"
+              >“Writing on GitHub”</a
+            >
+            on GitHub in the help sub domain.
+          </p>
+        </section>
+
+        <section id="Examples" class="main-section">
+          <header>
+            <h2>Examples</h2>
+          </header>
+          <section>
+            <h3>Text</h3>
+            <pre>
+                  It's very easy to make some words **bold** and other words *italic* with Markdown. You can even 
+                  <span style="white-space:nowrap">[link to Google!](http://google.com)</span>
+                </pre>
+            <p>
+              It's very easy to make some words <strong>bold</strong> and other
+              words <i>italic</i> with Markdown. You can even
+              <a href="https://www.google.com/">link to Google!</a>
+            </p>
           </section>
 
-          <section id="What_Is_Markdown?" class="main-section">
-              <header>
-                <h2>What is Markdown?</h2>
-              </header>
-              
-              <p>
-                <a href="http://daringfireball.net/projects/markdown/">Markdown</a> is a way to style text on the web. You control the display of the document; formatting words as bold or italic, adding images, and
-                creating lists are just a few of the things we can do with Markdown. Mostly, Markdown is just regular text with a few non-alphabetic characters thrown in, like
-                <code class="">#</code> or <code class="">*</code>.
-              </p>
-              <p>You can use Markdown most places around GitHub:</p>
+          <section>
+            <h3>Lists</h3>
+
+            <pre>
+                  Sometimes you want numbered lists:
+    
+                  1. One
+                  2. Two
+                  3. Three
+    
+                  Sometimes you want bullet points:
+    
+                  * Start a line with a star
+                  * Profit!
+    
+                  Alternatively,
+    
+                  - Dashes work just as well
+                  - And if you have sub points, put two spaces before the dash or star:
+                    - Like this
+                    - And this
+    
+                  Sometimes you want numbered lists:
+    
+                      One
+                      Two
+                      Three
+    
+                  Sometimes you want bullet points:
+    
+                      Start a line with a star
+                      Profit!
+    
+                  Alternatively,
+    
+                      Dashes work just as well
+                      And if you have sub points, put two spaces before the dash or star:
+                          Like this
+                          And this
+                </pre
+            >
+
+            <div>
+              <p>Sometimes you want numbered lists:</p>
 
               <ol>
-                <li><a href="https://gist.github.com/">Gists</a></li>
-                <li>Comments in Issues and Pull Requests</li>
-                <li>Files with the <code>.md</code> or <code>.markdown</code> extension</li>
+                <li>One</li>
+                <li>Two</li>
+                <li>Three</li>
               </ol>
-              <p>For more information, see <a href="https://help.github.com/categories/writing-on-github/">“Writing on GitHub”</a> on GitHub in the help sub domain.</p>
 
+              <p>Sometimes you want bullet points:</p>
+
+              <ul>
+                <li>Start a line with a star</li>
+                <li>Profit!</li>
+              </ul>
+
+              <p>Alternatively,</p>
+
+              <ul>
+                <li>Dashes work just as well</li>
+                <li>
+                  And if you have sub points, put two spaces before the dash or
+                  star:
+                  <ul>
+                    <li>Like this</li>
+                    <li>And this</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
           </section>
+        </section>
 
-          <section id="Examples" class="main-section">
-            <header>
-              <h2>Examples</h2>
-            </header>
-            <section>
-              <h3>Text</h3>
-              <pre>
-                It's very easy to make some words **bold** and other words *italic* with Markdown. You can even 
-                <span style="white-space:nowrap">[link to Google!](http://google.com)</span>
-              </pre>
-              <p>
-                It's very easy to make some words <strong>bold</strong> and other words <i>italic</i> with Markdown. You can even <a href="https://www.google.com/">link to Google!</a>
-              </p>
-            </section>
+        <section id="Syntax_guide" class="main-section">
+          <header>
+            <h2>Syntax guide</h2>
+          </header>
+          <div>
+            <h3>Headers</h3>
+            <pre class="highlight">
+              <code>
+                <span class="gh"># This is an &lt;h1&gt; tag</span>
+                <span class="gu">## This is an &lt;h2&gt; tag</span>
+                <span class="gu">###### This is an &lt;h6&gt; tag</span>
+              </code>
+            </pre>
+          </div>
+        </section>
 
-            <section>
-              <h3>Lists</h3>
-              
-              <pre>
-                Sometimes you want numbered lists:
-  
-                1. One
-                2. Two
-                3. Three
-  
-                Sometimes you want bullet points:
-  
-                * Start a line with a star
-                * Profit!
-  
-                Alternatively,
-  
-                - Dashes work just as well
-                - And if you have sub points, put two spaces before the dash or star:
-                  - Like this
-                  - And this
-  
-                Sometimes you want numbered lists:
-  
-                    One
-                    Two
-                    Three
-  
-                Sometimes you want bullet points:
-  
-                    Start a line with a star
-                    Profit!
-  
-                Alternatively,
-  
-                    Dashes work just as well
-                    And if you have sub points, put two spaces before the dash or star:
-                        Like this
-                        And this
-              </pre>
-              
-              <div>
-                <p>Sometimes you want numbered lists:</p>
+        <section id="GitHub_Flavored_Markdown" class="main-section">
+          <header>
+            <h2>GitHub Flavored Markdown</h2>
+          </header>
+          <div>
+            <p>
+              GitHub.com uses its own version of the Markdown syntax that
+              provides an additional set of useful features, many of which make
+              it easier to work with content on GitHub.com.
+            </p>
+            <p>
+              Note that some features of GitHub Flavored Markdown are only
+              available in the descriptions and comments of Issues and Pull
+              Requests. These include @mentions as well as references to SHA-1
+              hashes, Issues, and Pull Requests. Task Lists are also available
+              in Gist comments and in Gist Markdown files.
+            </p>
+          </div>
+        </section>
 
-                <ol>
-                  <li>One</li>
-                  <li>Two</li>
-                  <li>Three</li>
-                </ol>
+        <section id="Markdown_Resources" class="main-section">
+          <header>
+            <h2>Markdown Resources</h2>
+          </header>
+        </section>
+      </main>
+    </div>
 
-                <p>Sometimes you want bullet points:</p>
-
-                <ul>
-                  <li>Start a line with a star</li>
-                  <li>Profit!</li>
-                </ul>
-
-                <p>Alternatively,</p>
-
-                <ul>
-                  <li>Dashes work just as well</li>
-                  <li>And if you have sub points, put two spaces before the dash or star:
-                    <ul>
-                      <li>Like this</li>
-                      <li>And this</li>
-                    </ul>
-                  </li>
-                </ul>
-              </div>
-
-                    
-            </section>
-
-          </section>
-
-          <section id="Syntax_guide" class="main-section">
-              <header>
-                <h2>Syntax guide</h2>
-              </header>
-          </section>
-
-          <section id="GitHub_Flavored_Markdown" class="main-section">
-            <header>
-             <h2>GitHub Flavored Markdown</h2>
-            </header>
-          </section>
-
-          <section id="Markdown_Resources" class="main-section">
-            <header>
-              <h2>Markdown Resources</h2>
-            </header>
-          </section>
-    </main>
+    <!-- freeCodeCamp Test Suites -->
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
   </body>
 </html>
