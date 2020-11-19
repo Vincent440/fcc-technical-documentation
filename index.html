@@ -121,6 +121,7 @@
           </header>
           <section>
             <h3>Text</h3>
+
             <div class="example">
               <pre class="markdown">
                 <code>
@@ -128,7 +129,7 @@
   <span style="white-space:nowrap">[link to Google!](http://google.com)</span>
                 </code>
               </pre>
-              <p class="source">
+              <p class="rendered">
                 It's very easy to make some words <strong>bold</strong> and
                 other words <i>italic</i> with Markdown. You can even
                 <a href="https://www.google.com/">link to Google!</a>
@@ -162,7 +163,7 @@
                 </code>
               </pre>
 
-              <div class="source">
+              <div class="rendered">
                 <p>Sometimes you want numbered lists:</p>
 
                 <ol>
@@ -191,6 +192,80 @@
                     </ul>
                   </li>
                 </ul>
+              </div>
+            </div>
+          </section>
+
+          <section>
+            <h3>Images</h3>
+
+            <div class="example">
+              <pre class="markdown">
+                <code>
+  If you want to embed images, this is how you do it:
+
+  ![Image of cat](./cat.png)
+                </code>
+              </pre>
+
+              <div class="rendered">
+                <p>
+                  If you want to embed images, this is how you do it:
+                </p>
+                <img src="./cat-640.jpg" alt="white cat" />
+              </div>
+            </div>
+          </section>
+
+          <section>
+            <h3>Headers & Quotes</h3>
+
+            <div class="example">
+              <pre class="markdown">
+                <code>
+    # Structured documents
+
+    Sometimes it's useful to have different levels of headings to structure your documents. Start lines with a `#` to create headings. Multiple `##` in a row denote smaller heading sizes.
+    
+    ### This is a third-tier heading
+    
+    You can use one `#` all the way up to `######` six for different heading sizes.
+    
+    If you'd like to quote someone, use the > character before the line:
+    
+    > Coffee. The finest organic suspension ever devised... I beat the Borg with it.
+    > - Captain Janeway
+                </code>
+              </pre>
+
+              <div class="rendered">
+                <h1>Structured documents</h1>
+
+                <p>
+                  Sometimes it’s useful to have different levels of headings to
+                  structure your documents. Start lines with a <code>#</code> to
+                  create headings. Multiple <code>##</code> in a row denote
+                  smaller heading sizes.
+                </p>
+
+                <h3>This is a third-tier heading</h3>
+
+                <p>
+                  You can use one <code>#</code> all the way up to
+                  <code>######</code> six for different heading sizes.
+                </p>
+
+                <p>
+                  If you’d like to quote someone, use the &gt; character before
+                  the line:
+                </p>
+
+                <blockquote>
+                  <p>
+                    Coffee. The finest organic suspension ever devised… I beat
+                    the Borg with it. - Captain Janeway
+                  </p>
+                </blockquote>
               </div>
             </div>
           </section>

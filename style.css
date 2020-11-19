@@ -9,6 +9,13 @@ body {
   width: 100vw;
   background: darkgray;
 }
+p code,li code {
+  margin: 0 2px;
+  padding: 0px 5px;
+  border: 1px solid #ddd;
+  background-color: #f8f8f8;
+  border-radius: 3px;
+}
 .grid {
   padding: 0;
   margin: 0;
@@ -78,7 +85,7 @@ pre {
   border-top-left-radius: inherit;
   border-top-right-radius: inherit;
 }
-.source {
+.rendered {
   padding: 1em;
   margin: 0;
   border-bottom-left-radius: inherit;
