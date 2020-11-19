@@ -6,71 +6,20 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
+    <link rel="stylesheet" href="./style.css" />
     <title>Markdown Docs</title>
-  </head>
-  <body>
     <!-- CONTENT RESOURCE -->
     <!-- https://guides.github.com/features/mastering-markdown/ -->
-
-    <style>
-      body {
-        background: darkgray;
-      }
-      .container {
-        min-height: 300px;
-
-        max-width: 90vw;
-        font-size: 1.5em;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 250px auto;
-        grid-gap: 20px;
-        grid-template-areas:
-          'navbar'
-          'content';
-      }
-      pre {
-        background-color: #f8f8f8;
-        border: 1px solid #ddd;
-        font-size: 13px;
-        line-height: 19px;
-        overflow: auto;
-        padding: 6px 10px;
-        border-radius: 3px;
-      }
-      #navbar {
-        grid-area: navbar;
-      }
-      #main-doc {
-        grid-area: content;
-      }
-
-      @media (min-width: 600px) {
-        body {
-          overflow: hidden;
-        }
-        .container {
-          height: 100vh;
-          width: 100vw;
-          grid-template-columns: auto 1fr;
-          grid-template-rows: 100px 1fr;
-          grid-template-areas:
-            'navbar content'
-            'navbar content';
-        }
-        #main-doc {
-          overflow-y: scroll;
-        }
-      }
-    </style>
-    <div class="container">
-      <nav id="navbar">
+  </head>
+  <body>
+    <div class="grid border-rounded">
+      <nav id="navbar" class="border-rounded">
         <header>
           <h1>
             MD Documentation
           </h1>
         </header>
-        <ul>
+        <ul class="border-rounded">
           <li>
             <a class="nav-link" href="#Introduction">Introduction</a>
           </li>
@@ -95,7 +44,7 @@
           </li>
         </ul>
       </nav>
-      <main id="main-doc">
+      <main id="main-doc" class="border-rounded">
         <section id="Introduction" class="main-section">
           <header>
             <h2>
@@ -172,88 +121,77 @@
           </header>
           <section>
             <h3>Text</h3>
-            <pre>
-                  It's very easy to make some words **bold** and other words *italic* with Markdown. You can even 
-                  <span style="white-space:nowrap">[link to Google!](http://google.com)</span>
-                </pre>
-            <p>
-              It's very easy to make some words <strong>bold</strong> and other
-              words <i>italic</i> with Markdown. You can even
-              <a href="https://www.google.com/">link to Google!</a>
-            </p>
+            <div class="example">
+              <pre class="markdown">
+                <code>
+  It's very easy to make some words **bold** and other words *italic* with Markdown. You can even 
+  <span style="white-space:nowrap">[link to Google!](http://google.com)</span>
+                </code>
+              </pre>
+              <p class="source">
+                It's very easy to make some words <strong>bold</strong> and
+                other words <i>italic</i> with Markdown. You can even
+                <a href="https://www.google.com/">link to Google!</a>
+              </p>
+            </div>
           </section>
 
           <section>
             <h3>Lists</h3>
 
-            <pre>
-                  Sometimes you want numbered lists:
-    
-                  1. One
-                  2. Two
-                  3. Three
-    
-                  Sometimes you want bullet points:
-    
-                  * Start a line with a star
-                  * Profit!
-    
-                  Alternatively,
-    
-                  - Dashes work just as well
-                  - And if you have sub points, put two spaces before the dash or star:
-                    - Like this
-                    - And this
-    
-                  Sometimes you want numbered lists:
-    
-                      One
-                      Two
-                      Three
-    
-                  Sometimes you want bullet points:
-    
-                      Start a line with a star
-                      Profit!
-    
-                  Alternatively,
-    
-                      Dashes work just as well
-                      And if you have sub points, put two spaces before the dash or star:
-                          Like this
-                          And this
-                </pre
-            >
+            <div class="example">
+              <pre class="markdown">
+                <code>
+  Sometimes you want numbered lists:
 
-            <div>
-              <p>Sometimes you want numbered lists:</p>
+  1. One
+  2. Two
+  3. Three
+  
+  Sometimes you want bullet points:
+  
+  * Start a line with a star
+  * Profit!
+  
+  Alternatively,
+  
+  - Dashes work just as well
+  - And if you have sub points, put two spaces before the dash or star:
+    - Like this
+    - And this
+                </code>
+              </pre>
 
-              <ol>
-                <li>One</li>
-                <li>Two</li>
-                <li>Three</li>
-              </ol>
+              <div class="source">
+                <p>Sometimes you want numbered lists:</p>
 
-              <p>Sometimes you want bullet points:</p>
+                <ol>
+                  <li>One</li>
+                  <li>Two</li>
+                  <li>Three</li>
+                </ol>
 
-              <ul>
-                <li>Start a line with a star</li>
-                <li>Profit!</li>
-              </ul>
+                <p>Sometimes you want bullet points:</p>
 
-              <p>Alternatively,</p>
+                <ul>
+                  <li>Start a line with a star</li>
+                  <li>Profit!</li>
+                </ul>
 
-              <ul>
-                <li>Dashes work just as well</li>
-                <li>
-                  And if you have sub points, put two spaces before the dash or
-                  star:
-                  <ul>
-                    <li>Like this</li>
-                    <li>And this</li>
-                  </ul>
-                </li>
-              </ul>
+                <p>Alternatively,</p>
+
+                <ul>
+                  <li>Dashes work just as well</li>
+                  <li>
+                    And if you have sub points, put two spaces before the dash
+                    or star:
+                    <ul>
+                      <li>Like this</li>
+                      <li>And this</li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
             </div>
           </section>
         </section>
@@ -262,14 +200,15 @@
           <header>
             <h2>Syntax guide</h2>
           </header>
+          <p>Here’s an overview of Markdown syntax.</p>
           <div>
             <h3>Headers</h3>
             <pre class="highlight">
-              <code>
-                <span class="gh"># This is an &lt;h1&gt; tag</span>
-                <span class="gu">## This is an &lt;h2&gt; tag</span>
-                <span class="gu">###### This is an &lt;h6&gt; tag</span>
-              </code>
+<code>
+  <span class="gh"># This is an &lt;h1&gt; tag</span>
+  <span class="gu">## This is an &lt;h2&gt; tag</span>
+  <span class="gu">###### This is an &lt;h6&gt; tag</span>
+</code>
             </pre>
           </div>
         </section>

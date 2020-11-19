@@ -1,16 +1,19 @@
 # fcc-MD-technical-documentation
 
-freeCodeCamp Technical Documentation Page Created by Vincent Shury
+## Description
 
-A technical documentation site.
+A copy of GitHub's [Mastering Markdown](https://guides.github.com/features/mastering-markdown/) documentation site.
+
 My idea for completing this project was to find an existing set of documentation to restyle in my own unique format.
-As well as to give me the ability to add to my own docs if I needed to.
+As well as to give me the ability to customize the docs if I wanted to.
 
 **Markdown** was the documentation that I decided would be best to make a responsive web design project.
 
-[Mastering Markdown](https://guides.github.com/features/mastering-markdown/) located on [GitHub Guides](https://guides.github.com/) was my primary resource for the initial docs.
+ 
 
-Utilizing HTML, CSS, and Bootstrap v4.4 to create a mobile responsive page layout.
+On [GitHub Guides](https://guides.github.com/) was my primary resource for the initial docs.
+
+Utilizing HTML5, CSS3, and CSS3 Media Queries for responsive design.
 
 <!--Main Screenshot or image of project -->
 
