@@ -55,13 +55,12 @@ Follow the instructions provided in the link to get started if you want to do th
 
 ## Author
 
-**Vincent Shury** - *Project Designer and Developer*
+**Vincent Shury**
 
-* Portfolio - [vshury.com](https://www.vshury.com) - Browse my work and/or contact me
-
-* GitHub Profile - [github.com/Vincent440](https://github.com/Vincent440) - View my work on GitHub
-
-* LinkedIn - [linkedin.com/in/vincent-shury](https://www.linkedin.com/in/vincent-shury/) - Connect with me
+- [vshury.com](https://vshury.com/) Portfolio
+- [GitHub](https://github.com/Vincent440) Profile
+- [![Linkedin Badge](https://img.shields.io/badge/-Vincent_Shury-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/vincent-shury/)](https://www.linkedin.com/in/VincentShury/)
+- [@VincentShury](https://twitter.com/VincentShury) Twitter
 
 <!-- ## License
 
